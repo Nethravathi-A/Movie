@@ -6,30 +6,39 @@ const MovieList=(props)=>{
     const listItems=props.movies.map((movie)=>{
         return(
             <div key={movie.title}>
+            
                 <span>{movie.title}</span>
-                <button onClick={()=>props.selectMovie(movie)}>details</button>
-                 
+             
+                <button onClick={()=>props.selectMovie(movie)}>Details</button>
+                
+            
             </div>
         )
     })
     return(
-        <div className="List-Cantainer">
-            <h2>MovieList</h2>
-            <ul>
+        <div className="list-container">
+            <h2>Movie List</h2>
+            <div>
+            <ol className="list">
                 {listItems}
-            </ul>
+            </ol>
+            </div>
             
         </div>
     )
 }
+
 const mapStateToProps=(state)=>{
     return{
         movies:state.movies
+       
     }
 }
 
 const mapDispatchToProps={
     selectMovie:selectMovie
+   
 }
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(MovieList);

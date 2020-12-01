@@ -1,8 +1,76 @@
-h1{
-  text-align: center;
-}
 .App{
-  background:green;
- width: auto;
- height:630px;
+background:rgb(158, 163, 177);
+min-height: 96vh;
+text-align: center;
+}
+.container{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.details-container{
+  text-align: left;
+  justify-content: left;
+
+}
+.properties
+{
+  font-weight: 500;
+}
+.list-container{
+  text-align: left;
+ 
+  margin-right:30%;
+ 
+}
+.list{
+  width:auto;
+  display: contents;
+  text-transform:capitalize;
+  text-indent: 0.5rem;
+  margin-right: auto;
+  margin-left:40% ;
+  font-weight: 500;
+ padding: 50%;
+ 
+}
+button{
+justify-content: auto;
+align-content: auto;
+margin-top: 10px;
+border: none;
+float:left;
+outline: none;
+line-height: 2.5;
+padding: 0 30px;
+font-size: 1rem;
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
+width:100px;
+height: 40px;
+margin-left:auto;
+cursor: pointer;
+margin-right:60%;
+border-radius: 10px;
+background-color: rgb(39, 136, 216);
+background-image: linear-gradient(to top left,
+                                  rgba(0, 0, 0, .2),
+                                  rgba(0, 0, 0, .2) 30%,
+                                  rgba(0, 0, 0, 0));
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6)
+
+}
+button:hover {
+background-color: rgb(216, 49, 49);
+}
+
+button:active {
+box-shadow: inset -2px -2px 3px rgba(173, 96, 96, 0.6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+img{
+  height: 300px;
+  width: 500px;
 }
